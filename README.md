@@ -35,3 +35,9 @@ The database contains multiple tables, including:
    ```bash
    git clone https://github.com/MirthaT/SQL-Project-Analysis-of-Book-Service-Database.git
 
+2. Open the .sql or .ipynb files in your SQL client or Jupyter Notebook.
+
+3. Execute the queries step-by-step to reproduce the analysis.
+
+📬 Contact
+For questions or feedback, feel free to connect on LinkedIn or email me at mtorresca@gmail.com.
