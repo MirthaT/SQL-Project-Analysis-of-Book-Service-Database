@@ -1,5 +1,8 @@
 # 📚 SQL Case Study – Book Ratings Database
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MirthaT/SQL-Project-Analysis-of-Book-Service-Database/blob/main/SQL.ipynb)
+
+
 ## 📌 Project Overview
 During the COVID-19 pandemic, many people turned to reading as a primary source of entertainment at home. This trend led to the emergence of book-focused digital platforms.
 
