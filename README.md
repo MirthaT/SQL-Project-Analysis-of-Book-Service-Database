@@ -1,90 +1,76 @@
 # 📚 SQL Case Study – Book Ratings Database
 
 ## 📌 Project Overview
-The COVID-19 pandemic shifted people’s lifestyles dramatically, leading many to spend more time at home engaging in activities like reading. This change created a surge in demand for book-related digital platforms.
+During the COVID-19 pandemic, many people turned to reading as a primary source of entertainment at home. This trend led to the emergence of book-focused digital platforms.
 
-This project explores a SQL database from a startup that serves book readers. The database includes information about books, authors, publishers, user ratings, and reviews. Our task is to perform analytical queries to extract meaningful insights that can inform business decisions for a potential new product in this space.
+In this project, I analyzed a simulated SQL database from a fictional book service. The dataset includes information on books, authors, publishers, user ratings, and reviews. The goal was to extract insights to support the value proposition of a new product in this market.
+
 
 ## 🧩 Objectives
 
 The following analytical questions were answered using SQL:
 
-1. How many books were published after January 1, 2000?
-2. What is the number of reviews and the average rating for each book?
-3. Which publisher has published the most books with more than 50 pages?
-4. Who is the highest-rated author (only considering books with at least 50 ratings)?
-5. What is the average number of text reviews written by users who have rated more than 50 books?
+- 📅 Count how many books were published after January 1, 2000  
+- ⭐ Find the number of reviews and the average rating per book  
+- 🏢 Identify the publisher with the most books over 50 pages  
+- 🖋️ Find the author with the highest average rating (minimum 50 reviews per book)  
+- 🧑‍💻 Calculate the average number of text reviews by users who rated more than 50 books  
 
    
-## 🗂 Dataset
-The database contains five tables:
+---
 
-### `books`
-| Column | Description            |
-|--------|------------------------|
-| book_id | Book ID               |
-| author_id | Author ID           |
-| title | Book title              |
-| num_pages | Number of pages     |
-| publication_date | Publication date |
-| publisher_id | Publisher ID     |
+## 🔍 Summary of Insights
 
-### `authors`
-| Column | Description            |
-|--------|------------------------|
-| author_id | Author ID           |
-| author | Author's name          |
+| Question                                         | Key Insight                                  |
+|--------------------------------------------------|-----------------------------------------------|
+| Books after 2000                                 | 📚 **819** books published after 01/01/2000   |
+| Publisher with most full-length books (>50 pages)| 🏢 **Penguin Books** (42 titles)              |
+| Top-rated author (min. 50 reviews per book)      | 🖋️ **Diana Gabaldon**, avg. rating: **4.3**   |
+| Avg. text reviews by active users (>50 ratings)  | 💬 **24.33** reviews per user on average      |
 
-### `publishers`
-| Column | Description            |
-|--------|------------------------|
-| publisher_id | Publisher ID     |
-| publisher | Publisher name      |
+---
+## 🗂️ Project Structure
 
-### `ratings`
-| Column | Description            |
-|--------|------------------------|
-| rating_id | Rating ID           |
-| book_id | Book ID               |
-| username | Reviewer username    |
-| rating | Rating score (1-5)     |
-
-### `reviews`
-| Column | Description            |
-|--------|------------------------|
-| review_id | Review ID           |
-| book_id | Book ID               |
-| username | Reviewer username    |
-| text | Review content           |
-
-
-## 🔎 Tools Used
-
-- SQL (PostgreSQL)
-- Python (Pandas, SQLAlchemy)
-- Jupyter Notebook
+SQL-Project-Analysis-of-Book-Service-Database/
+│
+├── SQL.ipynb # Main analysis in Jupyter Notebook
+├── README.md # Project summary and instructions
+├── queries.sql # (Optional) SQL script with all queries
+└── images/ # (Optional) Screenshots or visuals
 
 ---
 
-## 🧾 Summary of Insights
+## ⚙️ How to Run the Notebook
 
-- A significant number of books were published after 2000, showing recent growth in digital publishing.
-- Some authors consistently receive high ratings, indicating reader preference patterns.
-- A few publishers dominate longer book publications, which may point to genre trends.
-- Active users tend to engage more deeply, leaving both ratings and detailed reviews.
+1. Clone the repository  
+2. Install required libraries:
+    ```bash
+    pip install pandas sqlalchemy psycopg2
+    ```
+3. Update the database credentials in the notebook  
+4. Run each cell step-by-step in Jupyter
+
+---
+   
+## 💻 Tools & Technologies
+
+- **PostgreSQL**
+- **SQLAlchemy + Psycopg2**
+- **Jupyter Notebook**
+- **Python + Pandas**
 
 ---
 
 ## 📌 Status
 
 ✅ Completed  
-📁 Stored in: `/notebooks/sql_case_study_books.ipynb`
+🚀 Open to feedback and improvements!
 
 ---
 
 ## 👩‍💻 Author
 
 **Mirtha Torres**  
-Data Analyst | IT Support Specialist  
+_Data Analyst | IT Support | SQL Enthusiast_  
 🔗 [GitHub Profile](https://github.com/MirthaT)
 
